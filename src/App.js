@@ -13,13 +13,13 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/"> Home </Link>
+        <Link to="/Music-Emporium"> Home </Link>
         <Link to="/music"> Music </Link>
         <Link to="/createpost"> Create Post </Link>
       </nav>
       <Routes>
         <Route path="/music" element={<PostBoard isAuth={isAuth} />} />
-        <Route path="/" element={<Home isAuth={isAuth} />} />
+        <Route path="/Music-Emporium" element={<Home isAuth={isAuth} />} />
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} style={{backgroundColor: 'white'}} />
       </Routes>
     </Router>
