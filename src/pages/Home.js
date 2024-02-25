@@ -31,11 +31,11 @@ function Home() {
         <div className ="homeContainer">
         <img src={require= aquarium  } />
         </div>
-        <img src={require= cigarette } className = "cigarette"/>
-        <img src={require= bottledog } className = "bottledog"/>
-        <img src={require= outside } className = "outside"/>
-        <img src={require= cat } className = "cat"/>
-        <img src={require= greendog } className = "greendog"/>
+        <img src={require= cigarette } className = "cigarette" loading = "lazy"/>
+        <img src={require= bottledog } className = "bottledog" loading = "lazy"/>
+        <img src={require= outside } className = "outside" loading = "lazy"/>
+        <img src={require= cat } className = "cat" loading = "lazy"/>
+        <img src={require= greendog } className = "greendog" loading = "lazy"/>
         <img
         src={clippy}
         className={`clippy ${isClippyAnimated ? 'animated spin3D' : ''}`}

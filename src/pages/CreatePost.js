@@ -4,6 +4,7 @@ import { db, auth } from "../firebase-config";
 import Box from '@mui/material/Box';
 import { useNavigate } from "react-router-dom";
 import { StarIcon } from '@heroicons/react/24/outline';
+import glitchy from './images/glitchy.jpeg';
 import Rating from "./Rating";
 import { IonIcon } from '@ionic/react';
 import { starOutline } from 'ionicons';
@@ -27,6 +28,10 @@ function CreatePost({ isAuth }) {
   const ratingContainerRef = useRef(null);
   const precision = 1;
   
+  document.body.style.backgroundImage = `url(${glitchy})`;
+  document.body.style.backgroundRepeat = 'repeat';
+  document.body.style.backgroundSize = '150px 80px';
+
   const handleClick = (e) => {
     setIsHovered(false);
     setActiveStar(calculateRating(e));

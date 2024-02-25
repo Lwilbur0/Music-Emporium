@@ -12,6 +12,7 @@ function PostBoard({ isAuth }) {
     document.body.style.backgroundColor = 'white'; // Change background color to black
     document.body.style.backgroundImage = `url(${glitchy})`;
     document.body.style.backgroundRepeat = 'repeat';
+    document.body.style.backgroundSize = '150px 80px';
     return () => {
       document.body.style.backgroundColor = ''; // Reset background color when component unmounts
       document.body.style.backgroundImage = '';
