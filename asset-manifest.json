@@ -1,12 +1,7 @@
 {
   "files": {
-    "main.css": "/Music-Emporium/static/css/main.dc465e8b.css",
-    "main.js": "/Music-Emporium/static/js/main.30f6fd29.js",
-    "static/js/738.e10b5ca8.chunk.js": "/Music-Emporium/static/js/738.e10b5ca8.chunk.js",
-    "static/js/858.46246c60.chunk.js": "/Music-Emporium/static/js/858.46246c60.chunk.js",
-    "static/js/3.f5306e66.chunk.js": "/Music-Emporium/static/js/3.f5306e66.chunk.js",
-    "static/js/372.09853c96.chunk.js": "/Music-Emporium/static/js/372.09853c96.chunk.js",
-    "static/js/856.a260f9a0.chunk.js": "/Music-Emporium/static/js/856.a260f9a0.chunk.js",
+    "main.css": "/Music-Emporium/static/css/main.0d6203d7.css",
+    "main.js": "/Music-Emporium/static/js/main.1c1d337b.js",
     "static/media/popup.png": "/Music-Emporium/static/media/popup.c4e360a45429fa8a6154.png",
     "static/media/cat.jpg": "/Music-Emporium/static/media/cat.3e765ae9559954500ea6.jpg",
     "static/media/dj.jpg": "/Music-Emporium/static/media/dj.ca6bab3444b516619763.jpg",
@@ -18,16 +13,11 @@
     "static/media/Photokako-low-image-quality-XmYlAImIb7TPgXW4.jpg": "/Music-Emporium/static/media/Photokako-low-image-quality-XmYlAImIb7TPgXW4.55b59eafd435e5f073af.jpg",
     "static/media/clippy.png": "/Music-Emporium/static/media/clippy.97a51d5e0ba3afd817d7.png",
     "index.html": "/Music-Emporium/index.html",
-    "main.dc465e8b.css.map": "/Music-Emporium/static/css/main.dc465e8b.css.map",
-    "main.30f6fd29.js.map": "/Music-Emporium/static/js/main.30f6fd29.js.map",
-    "738.e10b5ca8.chunk.js.map": "/Music-Emporium/static/js/738.e10b5ca8.chunk.js.map",
-    "858.46246c60.chunk.js.map": "/Music-Emporium/static/js/858.46246c60.chunk.js.map",
-    "3.f5306e66.chunk.js.map": "/Music-Emporium/static/js/3.f5306e66.chunk.js.map",
-    "372.09853c96.chunk.js.map": "/Music-Emporium/static/js/372.09853c96.chunk.js.map",
-    "856.a260f9a0.chunk.js.map": "/Music-Emporium/static/js/856.a260f9a0.chunk.js.map"
+    "main.0d6203d7.css.map": "/Music-Emporium/static/css/main.0d6203d7.css.map",
+    "main.1c1d337b.js.map": "/Music-Emporium/static/js/main.1c1d337b.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc465e8b.css",
-    "static/js/main.30f6fd29.js"
+    "static/css/main.0d6203d7.css",
+    "static/js/main.1c1d337b.js"
   ]
 }
