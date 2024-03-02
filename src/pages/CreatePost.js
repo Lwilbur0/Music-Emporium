@@ -1,15 +1,67 @@
 import React, { useState, useEffect, useRef } from "react";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { doc, updateDoc, addDoc, getDoc, increment, collection, serverTimestamp } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
-import Box from '@mui/material/Box';
 import { useNavigate } from "react-router-dom";
 import { StarIcon } from '@heroicons/react/24/outline';
 import glitchy from './images/glitchy.jpeg';
-import Rating from "./Rating";
-import { IonIcon } from '@ionic/react';
-import { starOutline } from 'ionicons';
+
+// currently unused and unecessary
+const getLikes = async (like, postId) => {
+  const postDocRef = doc(db, 'posts', postId);
+  try {
+    const postDoc = await getDoc(postDocRef);
+
+    if (postDoc.exists()) {
+      const data = postDoc.data();
+      const likes = data.likes || 0;
+      const dislikes = data.dislikes || 0;
+      if (like = "likes") {
+        return likes;
+      }
+      if (like = "dislikes") {
+        return dislikes;
+      }
+        }
+      else {
+        return { likes: 0, dislikes: 0 };
+      }
+  } catch (error) {
+    console.error('Error fetching likes and dislikes:', error);
+    return { likes: 0, dislikes: 0 };
+  }
+};
+
+const hasUserVoted = (postId) => {
+  // Check if the user has voted for the post and type (likes or dislikes)
+  return localStorage.getItem(`voted_${postId}`);
+};
 
 
+const updateLikes = async (like, postId, amount = 1) => {
+  const postDocRef = doc(db, 'posts', postId);
+  try {
+    if (like == "like") {
+      await updateDoc(postDocRef, {
+        likes: increment(amount), // increment likes by 1
+      });
+    }
+    if (like == "dislike") {
+      console.log("dislike")
+      await updateDoc(postDocRef, {
+        dislikes: increment(amount), // increment dislikes by 1
+      });
+    }
+    console.log('Likes updated successfully!');
+  } catch (error) {
+    console.error('Error updating likes:', error);
+  }
+};
+
+// export const getLikes = () => likes;
+
+// export const updateLikes = () => {
+//   addLikes(likes + 1);
+// };
 
 function CreatePost({ isAuth }) {
   const [title, setTitle] = useState("");
@@ -27,6 +79,12 @@ function CreatePost({ isAuth }) {
   const activeStars = 3;
   const ratingContainerRef = useRef(null);
   const precision = 1;
+
+  const [dislikes, updateDislikes] = useState(0);
+  const [likes, setLikes] = useState(0);
+  
+  
+
   
   document.body.style.backgroundImage = `url(${glitchy})`;
   document.body.style.backgroundRepeat = 'repeat';
@@ -101,6 +159,8 @@ function CreatePost({ isAuth }) {
             author: { name: user, id: 4 },
             albumArtUrl,
             timestamp: serverTimestamp(),
+            likes,
+            dislikes,
           });
     
           navigate("/music");
@@ -232,4 +292,5 @@ function CreatePost({ isAuth }) {
   );
 }
 
+export { getLikes, updateLikes };
 export default CreatePost;

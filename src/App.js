@@ -4,22 +4,28 @@ import PostBoard from "./pages/PostBoard";
 import Home from "./pages/Home";
 import CreatePost from "./pages/CreatePost";
 import { useState } from "react";
+import {Helmet} from "react-helmet";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
 
 
 function App() {
   const [isAuth, setIsAuth] = useState(true);
-  return (
+  return (  
     <Router>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>community emporium</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <nav>
-        <Link to="/Music-Emporium"> Home </Link>
+        <Link to="/"> Home </Link>
         <Link to="/music"> Music </Link>
         <Link to="/createpost"> Create Post </Link>
       </nav>
       <Routes>
         <Route path="/music" element={<PostBoard isAuth={isAuth} />} />
-        <Route path="/Music-Emporium" element={<Home isAuth={isAuth} />} />
+        <Route path="/" element={<Home isAuth={isAuth} />} />
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} style={{backgroundColor: 'white'}} />
       </Routes>
     </Router>
