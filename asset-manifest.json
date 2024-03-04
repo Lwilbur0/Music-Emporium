@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Music-Emporium/static/css/main.0d6203d7.css",
-    "main.js": "/Music-Emporium/static/js/main.1c1d337b.js",
-    "static/media/popup.png": "/Music-Emporium/static/media/popup.c4e360a45429fa8a6154.png",
-    "static/media/cat.jpg": "/Music-Emporium/static/media/cat.3e765ae9559954500ea6.jpg",
-    "static/media/dj.jpg": "/Music-Emporium/static/media/dj.ca6bab3444b516619763.jpg",
-    "static/media/bottledog.jpg": "/Music-Emporium/static/media/bottledog.5ae890c8d2b845e57176.jpg",
-    "static/media/cigarette.jpg": "/Music-Emporium/static/media/cigarette.a2a813ae3fe21b46411f.jpg",
-    "static/media/greendog.jpg": "/Music-Emporium/static/media/greendog.5a134f8bb7969a6425ea.jpg",
-    "static/media/outside.jpg": "/Music-Emporium/static/media/outside.2bfbb07ca2d9d5014f7c.jpg",
-    "static/media/D3Electronism.TTF": "/Music-Emporium/static/media/D3Electronism.e47a0b8ac16804c7996f.TTF",
-    "static/media/Photokako-low-image-quality-XmYlAImIb7TPgXW4.jpg": "/Music-Emporium/static/media/Photokako-low-image-quality-XmYlAImIb7TPgXW4.55b59eafd435e5f073af.jpg",
-    "static/media/clippy.png": "/Music-Emporium/static/media/clippy.97a51d5e0ba3afd817d7.png",
-    "index.html": "/Music-Emporium/index.html",
-    "main.0d6203d7.css.map": "/Music-Emporium/static/css/main.0d6203d7.css.map",
-    "main.1c1d337b.js.map": "/Music-Emporium/static/js/main.1c1d337b.js.map"
+    "main.css": "/static/css/main.30f451ff.css",
+    "main.js": "/static/js/main.bbf7b0eb.js",
+    "static/media/popup.png": "/static/media/popup.c4e360a45429fa8a6154.png",
+    "static/media/cat.jpg": "/static/media/cat.3e765ae9559954500ea6.jpg",
+    "static/media/dj.jpg": "/static/media/dj.ca6bab3444b516619763.jpg",
+    "static/media/bottledog.jpg": "/static/media/bottledog.5ae890c8d2b845e57176.jpg",
+    "static/media/cigarette.jpg": "/static/media/cigarette.a2a813ae3fe21b46411f.jpg",
+    "static/media/greendog.jpg": "/static/media/greendog.5a134f8bb7969a6425ea.jpg",
+    "static/media/outside.jpg": "/static/media/outside.2bfbb07ca2d9d5014f7c.jpg",
+    "static/media/D3Electronism.TTF": "/static/media/D3Electronism.e47a0b8ac16804c7996f.TTF",
+    "static/media/Photokako-low-image-quality-XmYlAImIb7TPgXW4.jpg": "/static/media/Photokako-low-image-quality-XmYlAImIb7TPgXW4.55b59eafd435e5f073af.jpg",
+    "static/media/clippy.png": "/static/media/clippy.97a51d5e0ba3afd817d7.png",
+    "index.html": "/index.html",
+    "main.30f451ff.css.map": "/static/css/main.30f451ff.css.map",
+    "main.bbf7b0eb.js.map": "/static/js/main.bbf7b0eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d6203d7.css",
-    "static/js/main.1c1d337b.js"
+    "static/css/main.30f451ff.css",
+    "static/js/main.bbf7b0eb.js"
   ]
 }
