@@ -39,3 +39,12 @@ span {
     user-select: none;
 
 }
+@media screen and (max-width: 600px) {
+  .homePage .post {
+    /* Adjust styles for smaller screens */
+    width: 100%; /* Make posts take full width */
+    font-size: 0.8em;
+    overflow-x: hidden;
+    /* Add more adjustments as needed */
+  }
+}
